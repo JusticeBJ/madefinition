@@ -1,7 +1,20 @@
 
-
-command=======================
+=======================
+command
+=======================
 https://stackoverflow.com/questions/11552437/git-pull-remote-branch-cannot-find-remote-ref
 
 git push -u origin
 git push -u origin main
+
+
+========================
+svg images 
+========================
+https://css-tricks.com/change-color-of-svg-on-hover/
+
+
+======================
+png images 
+========================
+https://www.pngegg.com/en/png-hjozn

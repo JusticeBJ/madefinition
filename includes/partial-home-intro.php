@@ -6,7 +6,7 @@
         <div class="intro__content black" >
             <div class="container-fluid  gutter8">
                 <div class="row" >
-                    <div class="col-md-10 col-xl-7" data-aos="fade-right" data-aos-delay="0" data-aos-duration="400" >
+                    <div class="col-md-10 col-xl-7">
                         <h3><?php echo $print['title']; ?></h3>
                         <p><?php echo $print['text']; ?></p> 
                     </div>

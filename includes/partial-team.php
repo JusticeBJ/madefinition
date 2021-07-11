@@ -8,10 +8,7 @@
     <div class="team__content">
       <div class="container-fluid gutter8">
         <h1 class="heading-font"><?php echo $print['title']; ?></h1>
-        <div class="paragraph"><?php echo $print['text']; ?></h1>
-
-
-
+        <div class="paragraph"><?php echo $print['text']; ?></div>
         <?php 
           $counter= 0;
           $number_picture= 6;
@@ -39,29 +36,21 @@
                   $image = get_template_directory_uri().'/assets/images/Justice.png';
               }
             ?>
-            <div class="team__picture column--<?php echo $counter_column ;?> img-full" data-aos="fade-up" data-aos-delay="<?php echo $delay; ?>" data-aos-duration="500">
+            <div class="team__picture column--<?php echo $counter_column ;?> img-full">
               <img src="<?php echo $image;?>" alt="<?php echo $print['title']; ?>">
               <div class="team__member">
                 <h5><?php echo $print['name_'.$picture_number]; ?></h5>
                 <div class="paragraph"><?php echo $print['description_'.$picture_number]; ?></div>
               </div>
             </div>
-
-              
             <?php
             $counter++;
           }
         ?>
-
-
         <div class="row">
           <div class="col-md-4 team__column column-1"></div>
           <div class="col-md-4 team__column column-2"></div>
           <div class="col-md-4 team__column column-3"></div>
-          </div>
-          <!-- <div class="col-md-7">
-            <div class="paragraph"><?php echo $print['text']; ?></div>
-          </div> -->
         </div>
       </div>
     </div>

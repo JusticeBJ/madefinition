@@ -11,22 +11,23 @@ var localhost_link= "http://localhost/madefinition/madefinition/";
 function style() { 
     var config= {};
     config.outputStyle= 'compressed';
-	return gulp.src(['./assets/scss/contact.scss', './assets/scss/style.scss']) 
+	return gulp.src('./assets/scss/style.scss') 
     .pipe(sass()) 
     .pipe(gulp.dest('./assets/css/'))  
     .pipe(sass(config))
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest('./assets/css/'));   
+    .pipe(gulp.dest('./assets/css/'))
+    .pipe(browserSync.stream());   
 } 
 
 //.....................................   == js file  == ..........................
 function script() {
     return gulp.src([
-        './assets/js/plugins-js/jquery.min.js',
-        './assets/js/plugins-js/popper.min.js',
-        './assets/js/plugins-js/bootstrap.min.js',
+        // './assets/js/plugins-js/jquery.min.js',
+        // './assets/js/plugins-js/popper.min.js',
+        // './assets/js/plugins-js/bootstrap.min.js',
         './assets/js/plugins-js/swiper.js',
-        './assets/js/plugins-js/aos.js',
+        // './assets/js/plugins-js/aos.js',
         // './assets/js/plugins-js/fontawesome-markers.min.js',
         './assets/js/local-js/*.js'
     ])

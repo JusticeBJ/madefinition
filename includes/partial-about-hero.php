@@ -7,7 +7,7 @@
     <div class="container-fluid  gutter8">
       <div class="row">
           <div class="col-md-4">
-            <div class="about-hero__image img-full" data-aos="zoom-in-up" data-aos-delay="0" data-aos-duration="1500">
+            <div class="about-hero__image img-full">
                 <?php
                 $image = $print['image'];
                 $imageID = $image['id'];
@@ -31,8 +31,6 @@
           </div>
         </div>
       </div>
-
-
 
     </div>
     <?php

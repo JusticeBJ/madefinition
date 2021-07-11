@@ -1,16 +1,16 @@
 // add AOS animation
 // Documentation: https://michalsnik.github.io/aos/
-if(jQuery(window).innerWidth() < 768 ) {
-  AOS.init({
-    disable: true
-  })
-}
-if(jQuery(window).innerWidth() >= 768 ) {
-  AOS.init({
-    easing: 'linear',    
-    duration: 2000,
-  })
-}
+// if(jQuery(window).innerWidth() < 768 ) {
+//   AOS.init({
+//     disable: true
+//   })
+// }
+// if(jQuery(window).innerWidth() >= 768 ) {
+//   AOS.init({
+//     easing: 'linear',    
+//     duration: 2000,
+//   })
+// }
 
 
 
