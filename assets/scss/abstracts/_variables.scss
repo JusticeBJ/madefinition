@@ -1,21 +1,41 @@
 
 $black: #000000;
-$black_trensparent: rgba(0, 0, 0, .8); 
+$black_trensparent: rgba($black, .8); 
 $white: #ffffff;
 $lightgrey: #e6e6e6;    
 $grey:#808080;
 $orange: orange;
-$menu_bg_slider: rgb(128, 0, 0);           
-// $green: #008000;    
+$menu_bg_slider: #800000; 
 $green: #00B3A6; 
-$green_trensparent: rgba(0, 179, 166, .8);
+$green_trensparent: rgba($green, .8);
 $light_green: #ccffcc;  
 $blue: #1396e8; 
-$blue_trensparent: rgba(19, 150, 232, .8);
+$blue_trensparent: rgba($blue, .8);
 $light_blue: #e8f0fd;   
 $red: #ff0000;     
 $pink: #ff9999;   
-$pink_trensparent: rgba(255, 153, 153, .8);
+$pink_trensparent: rgba($pink, .8);
 $light_pink: #ffe6e6;   
 $yellow: #ffcc00;       
 $gold: #FFD700;
+
+
+
+//default font-size
+$default-font-size: 14;
+
+//font-sizes             
+$f14: #{14/$default-font-size}rem;        
+$f16: #{16/$default-font-size}rem;        
+$f18: #{18/$default-font-size}rem;        
+$f20: #{20/$default-font-size}rem;        
+$f24: #{24/$default-font-size}rem;         
+$f25: #{25/$default-font-size}rem;        
+$f28: #{28/$default-font-size}rem;        
+$f30: #{30/$default-font-size}rem;        
+$f32: #{32/$default-font-size}rem;        
+$f36: #{36/$default-font-size}rem;        
+$f40: #{40/$default-font-size}rem;        
+$f45: #{45/$default-font-size}rem;        
+$f50: #{50/$default-font-size}rem;        
+$f60: #{60/$default-font-size}rem; 

@@ -7947,13 +7947,37 @@ button.swiper-pagination-bullet {
   font-family: 'Calligraffitti';
   src: url("../fonts/Calligraffitti/Calligraffitti-Regular.ttf"); }
 
-html {
-  font-size: 4.5vw !important;
-  line-height: 4.5vw !important; }
+h1 {
+  font-size: 3.57143rem;
+  font-weight: 700; }
 
+h3 {
+  font-size: 2.14286rem;
+  font-weight: 700; }
+
+h4 {
+  font-size: 1.78571rem;
+  font-weight: 700; }
+
+p,
+.paragraph,
+.paragraph p p,
+.paragraph p div,
+.paragraph div p,
+p ul li,
+p ul li span,
+p ul li a {
+  font-size: 1.28571rem !important;
+  line-height: 1.3 !important; }
+
+.paragraph p,
+.paragraph div {
+  font-size: 1.28571rem !important; }
+
+html,
 body {
-  font-size: 0.25rem;
-  line-height: .3rem !important; }
+  font-size: 14px;
+  line-height: 1.3; }
 
 .gutter8 {
   padding-left: 10vw !important;
@@ -7979,41 +8003,12 @@ body {
   color: #ffffff;
   background-color: #ffffff; }
 
-p,
-.paragraph,
-.paragraph p p,
-.paragraph p div,
-.paragraph div p,
-p ul li,
-p ul li span,
-p ul li a {
-  font-size: 0.26rem !important;
-  line-height: .39rem !important;
-  margin-bottom: .3rem; }
-
-.paragraph p,
-.paragraph div {
-  font-size: 0.26rem;
-  line-height: .4rem; }
-
 .paragraph span,
 .paragraph div span,
 .paragraph p span,
 ul li span, p span {
   color: #ff0000;
   font-size: 600; }
-
-h1 {
-  font-size: 1rem;
-  font-weight: bold; }
-
-h3 {
-  font-size: .6rem;
-  font-weight: bold; }
-
-h4 {
-  font-size: .4rem;
-  font-weight: bold; }
 
 input:-webkit-autofill {
   -webkit-text-fill-color: #ffffff;
@@ -8072,58 +8067,11 @@ input:-webkit-autofill {
 .hide, .display-md {
   display: none; }
 
-@media only screen and (max-width: 1199px) {
+@media only screen and (min-width: 768px) {
+  html,
   body {
-    font-size: 17px;
-    line-height: 18px; }
-  .heading-font {
-    margin-bottom: 30px; }
-  h1 {
-    font-size: 50px;
-    font-weight: bold; }
-  h3 {
-    font-size: 30px;
-    font-weight: bold; }
-  h4 {
-    font-size: 25px;
-    font-weight: bold; }
-  .btn-general {
-    bottom: 45px; }
-    .btn-general a {
-      font-size: 18px; }
-  input, textarea {
-    caret-color: #ff0000; }
-  p,
-  .paragraph,
-  .paragraph p p,
-  .paragraph p div,
-  .paragraph div p,
-  p ul li,
-  p ul li span,
-  p ul li a {
-    font-size: 17px !important;
-    line-height: 24px !important;
-    margin-bottom: 20px; }
-  .paragraph p,
-  .paragraph div {
-    font-size: 17px; } }
-
-@media only screen and (max-width: 767px) {
-  .gutter8 {
-    padding-left: 5vw !important;
-    padding-right: 5vw !important; }
-  .hide-lg {
-    display: none !important; }
-  .hide-md {
-    display: none; }
-  .display-md {
-    display: block; }
-  .btn-general a {
-    padding-top: 15px;
-    padding-bottom: 18px; }
-    .btn-general a:hover {
-      color: #ffffff;
-      background-color: #000000; } }
+    font-size: 1vw;
+    line-height: 1; } }
 
 .header__content {
   height: 6vw;
@@ -8324,7 +8272,7 @@ input:-webkit-autofill {
         .header .header__content .menu-button #menu-container #menu-wrapper #hamburger-menu.open span:nth-child(3) {
           transform: translateY(-9px) rotate(-135deg); }
   .header .header__content .navbar-nav {
-    background-color: maroon;
+    background-color: #800000;
     position: fixed;
     top: 0px;
     left: 0px;

@@ -1,0 +1,28 @@
+
+h1{
+    font-size: $f50;
+    font-weight: 700; 
+}
+h3{
+    font-size: $f30;     
+    font-weight: 700; 
+}
+h4{
+    font-size: $f25;     
+    font-weight: 700; 
+}
+p,
+.paragraph, 
+.paragraph p p,
+.paragraph p div,
+.paragraph div p,
+p ul li,
+p ul li span,
+p ul li a{
+    font-size: $f18 !important;    
+    line-height: 1.3 !important;
+}
+.paragraph p,       
+.paragraph div{
+    font-size: $f18 !important;      
+}
