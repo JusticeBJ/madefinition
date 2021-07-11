@@ -1,0 +1,208 @@
+
+html { 
+    font-size:  4.5vw !important;  
+    line-height: 4.5vw !important; 
+}
+  body{
+    font-size: 0.25rem;  
+    line-height: .3rem !important;
+}
+.gutter8{
+    padding-left: 10vw !important; 
+    padding-right: 10vw !important; 
+}
+.black{
+    color: $white;
+    background-color: $black;   
+}       
+.green{
+    color: $white;
+    background-color: $green;    
+}         
+.pink{
+    color: $white; 
+    background-color: $pink; 
+}
+.blue{
+    color: $white; 
+    background-color: $blue; 
+}
+.white{
+    color: $white;
+    background-color: $white;         
+}
+
+
+p,
+.paragraph, 
+.paragraph p p,
+.paragraph p div,
+.paragraph div p,
+p ul li,
+p ul li span,
+p ul li a{
+    font-size: 0.26rem !important;   
+    line-height: .39rem !important;
+    margin-bottom: .3rem;
+}
+.paragraph p,      
+.paragraph div{
+  font-size: 0.26rem;   
+    line-height: .4rem;       
+}
+
+.paragraph, 
+.paragraph div,
+.paragraph p,
+ul li, p{
+    span{
+        color: $red;
+        font-size: 600; 
+    }        
+}
+h1{
+    font-size: 1rem; 
+    font-weight: bold; 
+}
+h3{
+    font-size: .6rem;     
+    font-weight: bold; 
+}
+h4{
+    font-size: .4rem;
+    font-weight: bold; 
+}
+input:-webkit-autofill{
+    -webkit-text-fill-color: $white;  
+    transition: background-color 9999s ease-in-out;  
+    transition-delay: 9999s; 
+    -webkit-transition: background-color 9999s ease-in-out;  
+    -webkit-transition-delay: 9999s;  
+} 
+.btn-general{
+    // height: 80px;  
+    display: flex;
+    width: 100%;   
+    justify-content: center;
+    align-items: center;   
+    position: absolute;
+    bottom: 5vw; 
+    left: -.1rem;
+    a{
+        font-size: .25rem;  
+        font-weight: 500;
+        color: $white;
+        background-color: $black;
+        padding: 8px 30px 11px 30px; 
+        border: 1px solid $black;
+        border-radius: 2rem;
+        transition: all .4s;    
+        -webkit-transition: all .4s; /* Safari 3.1 to 6.0 */  
+        &:hover{
+            // transform: scale(0.9);     
+            text-decoration: none;
+            color: $black;
+            background-color: $white;  
+            transition: all .4s;    
+            -webkit-transition: all .4s; /* Safari 3.1 to 6.0 */  
+        }
+    }
+}    
+.bg-wave{
+    position: relative;
+    z-index: 3;
+}
+.heading-font{   
+    font-family: 'Reenie Beanie', cursive;   
+    color: red;
+    text-decoration: underline;
+    margin-bottom: 3vw;   
+}
+.img-full img, .img-full{
+    width: 100%;
+    height: auto;
+}
+.tab-content{
+    margin-top: 60px;
+}   
+.hide-md{
+    display: block;
+}
+.hide, .display-md{
+    display: none;
+}
+
+@media only screen and (max-width: 1199px) {   
+    body{
+        font-size: 17px;   
+        line-height: 18px;
+    }
+    .heading-font{   
+        margin-bottom: 30px;   
+    }
+    h1{
+        font-size: 50px;
+        font-weight: bold; 
+    }
+    h3{
+        font-size: 30px;     
+        font-weight: bold; 
+    }
+    h4{
+        font-size: 25px;     
+        font-weight: bold; 
+    }
+    .btn-general{
+        bottom: 45px; 
+        a{
+            font-size: 18px;
+        }
+    }
+    input,textarea{
+        caret-color: $red;
+    }
+    p,
+    .paragraph, 
+    .paragraph p p,
+    .paragraph p div,
+    .paragraph div p,
+    p ul li,
+    p ul li span,
+    p ul li a{
+        font-size: 17px !important;    
+        line-height: 24px !important;
+        margin-bottom: 20px;
+    }
+    .paragraph p,       
+    .paragraph div{
+        font-size: 17px;      
+    }
+}
+@media only screen and (max-width: 767px) {   
+    .gutter8{
+        padding-left: 5vw !important;
+        padding-right: 5vw !important;
+    }
+    .hide-lg{
+        display: none !important;
+    }
+    .hide-md{
+        display: none;
+    }
+    .display-md{
+        display: block;
+    }
+   
+    .btn-general{
+        a{ 
+            padding-top: 15px;
+            padding-bottom: 18px;
+            &:hover{
+                color: $white;
+                background-color: $black; 
+            }
+        }
+    }  
+    
+
+}

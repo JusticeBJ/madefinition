@@ -1,0 +1,72 @@
+@import "variables.scss";
+.contact{       
+    position: relative; 
+    &__frame{
+        background-color: $lightgrey;
+    }
+    &__content{ 
+    }
+    ul{
+        padding-left: 1vw;  
+        li{
+            margin-bottom: 3vw;    
+            list-style: none;    
+            i{ 
+                font-size: 3vw;  
+                margin-right: .3rem; 
+                color: $white;
+                width: 10%;    
+            } 
+            span{
+                margin-right: 1vw;  
+            }
+            a{
+                font-weight: bold;
+                margin-left: 0px;   
+                color: $black;
+                // vertical-align: bottom; 
+                &:hover{   
+                    text-decoration: none;  
+                    color: $red; 
+                } 
+                
+            }
+        }
+    }
+ 
+}
+.contact.is-screened{
+    background-color: red;
+}   
+
+@media only screen and (max-width: 767px) {
+    .contact{   
+        &__content{
+            border-right: 1px solid transparent;
+            padding-right: 10px;
+            ul{
+                li{
+                    margin-bottom: 20px;
+                    i{
+                        width: 10%; 
+                        font-size: 28px;   
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 400px) {    
+
+    .contact{   
+        &__content{
+           ul li{
+               margin-bottom: 30px;
+               i{
+                display: none;
+               }
+           }
+        }
+    }
+}

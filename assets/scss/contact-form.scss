@@ -1,0 +1,160 @@
+.contact-form{
+    color: $white;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: right;     
+    position: relative;        
+    margin-bottom: -9.5vw;   
+    z-index: 2 !important; 
+    &__frame{
+        position: relative;  
+        z-index: 3;
+        background-color: rgba(0, 0, 0, .2);          
+        padding-top: 60px;  
+        padding-bottom: 200px;   
+        h3{  
+             color: $white;   
+             margin-bottom: 3vw;
+         }
+    } 
+    &__content{
+        .wpforms-confirmation-container-full{
+            margin-bottom: 5vw;
+            background-color: $white;
+            h4{
+                color: $red;
+                margin-bottom: 1vw;
+            }
+            p{
+                color: $black;
+                font-weight: bold;
+            }
+        }
+    }
+    &__input{
+        margin-bottom: .2rem !important;
+        label{
+            font-size: .25rem !important;
+            width: 30% !important;
+            display: inline-block !important;
+            vertical-align: top !important;
+            .wpforms-required-label{
+                display: none;  
+            }
+        }
+        label.wpforms-error{ 
+            font-size: .2rem !important; 
+            font-weight: 600 !important;
+            color: $red !important;
+            display: block !important;
+            width: 65% !important; 
+            padding-left: 31% !important;
+        }
+        input,textarea,
+        input.wpforms-error,
+        textarea.wpforms-error{
+            font-size: .25rem !important;
+            color: $white !important;
+            background-color: transparent !important;
+            border: .02rem solid $white !important;
+            display: inline-block !important;     
+            caret-color: $red;
+            width: 69% !important; 
+            border-radius: .15rem !important;
+            padding: .3rem !important;
+        }
+        textarea{
+            height: 3rem !important;
+        }
+        
+        
+    }
+    &__btn{
+        color: $white !important;
+        font-weight: bold;
+        margin-left: 30% !important; 
+        padding: .2rem !important;
+        border: 2px solid $white !important;
+        border-radius: .2rem !important;
+        background-color: transparent !important;
+        transition: all .4s ease;
+        -o-transition: all .4 ease;
+        &:hover{
+            color: $red !important;
+            border: 2px solid $red !important;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1199px) {
+    .contact-form{
+        &__frame{
+            padding-bottom: 120px;
+        }
+        &__content{
+            .wpforms-confirmation-container-full{
+                margin-top: 50px;
+            }
+        }
+        &__input{
+            margin-bottom: .2rem !important; 
+            label{
+                font-size: 17px !important;
+            }
+            label.wpforms-error{ 
+                font-size: 17px !important; 
+                padding-top: 5px !important;
+                font-weight: 600 !important;
+                color: $red !important;
+                display: block !important;
+                width: 65% !important; 
+                padding-left: 31% !important;
+            }
+            input,textarea,
+            input.wpforms-error,
+            textarea.wpforms-error{
+                font-size: 17px !important;
+                border: 1px solid $white !important;
+                border-radius: 10px !important;
+                padding: .3rem !important;
+            }
+            textarea{
+                height: 200px !important;
+            }
+            
+            
+        }
+        &__btn{  
+            padding: 12px !important;
+            border: 2px solid $white !important;
+            border-radius: 10px !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .contact-form{
+        &__frame{
+            
+        }
+        &__input{
+            label{
+                width: 100% !important;
+            }
+            input,textarea,
+            input.wpforms-error,
+            textarea.wpforms-error{
+                width: 100% !important;
+                padding: 15px !important;
+            }
+        }
+        &__btn{ 
+            margin-left: 0px !important;
+            padding: 18px !important;  
+        }
+    }
+}

@@ -1,0 +1,43 @@
+//----------=======>>> Pugins <<<=======----------
+@import "./plugins/bootstrap.min.scss"; 
+// @import "./plugins/fontawesome.scss";  
+// @import url('//use.fontawesome.com/releases/v5.7.2/css/all.css'); 
+@import "./plugins/swiper";  
+@import "./plugins/aos";  
+
+//----------=======>>> Font Families <<<=======----------
+@font-face {
+    font-family: 'Reenie Beanie'; 
+    src: url('../fonts/Reenie_Beanie/ReenieBeanie-Regular.ttf');   
+}  
+@font-face {
+    font-family: 'Calligraffitti';  
+    src: url('../fonts/Calligraffitti/Calligraffitti-Regular.ttf');   
+} 
+
+//----------=======>>> Local Styles <<<=======----------
+@import "variables";  
+@import "main";
+@import "header"; 
+@import "footer"; 
+   
+@import "home-hero"; 
+@import "about-hero";  
+@import "contact-form";
+@import "hero";
+@import "intro";
+@import "services";
+// @import "contact";
+@import "about";
+@import "profile";  
+@import "team";   
+@import "values";  
+@import "form";
+@import "news"; 
+@import "wave";
+@import "404";  
+
+
+ 
+
+

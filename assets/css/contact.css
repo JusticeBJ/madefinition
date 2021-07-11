@@ -1,0 +1,42 @@
+.contact {
+  position: relative; }
+  .contact__frame {
+    background-color: #e6e6e6; }
+  .contact ul {
+    padding-left: 1vw; }
+    .contact ul li {
+      margin-bottom: 3vw;
+      list-style: none; }
+      .contact ul li i {
+        font-size: 3vw;
+        margin-right: .3rem;
+        color: #ffffff;
+        width: 10%; }
+      .contact ul li span {
+        margin-right: 1vw; }
+      .contact ul li a {
+        font-weight: bold;
+        margin-left: 0px;
+        color: #000000; }
+        .contact ul li a:hover {
+          text-decoration: none;
+          color: #ff0000; }
+
+.contact.is-screened {
+  background-color: red; }
+
+@media only screen and (max-width: 767px) {
+  .contact__content {
+    border-right: 1px solid transparent;
+    padding-right: 10px; }
+    .contact__content ul li {
+      margin-bottom: 20px; }
+      .contact__content ul li i {
+        width: 10%;
+        font-size: 28px; } }
+
+@media only screen and (max-width: 400px) {
+  .contact__content ul li {
+    margin-bottom: 30px; }
+    .contact__content ul li i {
+      display: none; } }

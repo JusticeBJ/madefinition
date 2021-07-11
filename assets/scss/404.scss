@@ -1,0 +1,20 @@
+.page--404{
+    color: $white;
+    background-color: $black;
+    height: 1000px;
+    padding-top: 140px; 
+    .page__content h3{
+        color: $red;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .page--404{
+        padding-top: 20px; 
+        .page__content h3{  
+            color: $red;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+    }
+}

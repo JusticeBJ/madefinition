@@ -1,0 +1,108 @@
+.team{
+    background-repeat: no-repeat;
+    background-size: cover;  
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: right;  
+    position: relative;
+    margin-top: -8.5vw;         
+    margin-bottom: -9.5vw;  
+    &__content{
+        position: relative;  
+        z-index: 3;
+        background-color: rgba(0, 0, 0, .3);     
+        padding-top: 13vw;     
+        padding-bottom: 15vw; 
+        h1{
+            margin-bottom: 4vw;    
+        }
+        .paragraph{
+            color: $white;
+        }
+    }
+    &__column{
+        
+    }
+    &__column:nth-child(2){
+        padding-top: 20vw;
+    }
+    &__column:nth-child(3){ 
+        padding-top: 10vw;       
+    }
+    &__picture{
+        margin-top: 2vw;   
+        border: 1px solid $black; 
+        position: relative;
+        img{
+            
+        }
+        &:hover .team__member{
+            display: block;
+            transition: all .5s ease;     
+        }
+    }
+    &__member{
+        display: none;
+        position: absolute; 
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        background-color: rgba(0,0,0,.5); 
+        transition: all .5s ease;   
+        vertical-align: bottom;   
+        h5{
+            color: $red;
+            font-size: .4rem;
+            text-transform: uppercase; 
+            position: absolute; 
+            bottom: 3.5vw;
+            left: 1.5vw; 
+        }
+        .paragraph{
+            color: $white;
+            text-transform: capitalize;
+            position: absolute;   
+            bottom: 2.5vw;
+            left: 1.5vw; 
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1199px) {  
+    .team{
+        &__member{
+            h5{
+                bottom: 30px;
+                left: 20px; 
+            }
+            .paragraph{
+                bottom: 10px;
+                left: 20px; 
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {  
+    .team{
+        .team__content{  
+            padding-top: 100px;     
+            padding-bottom: 150px;  
+            h1{
+            }
+            .paragraph{
+                margin-top: 50px;  
+                margin-left: 0px;  
+            }
+        }
+        &__column:nth-child(2),
+        &__column:nth-child(3){
+            padding-top: 0vw;
+        }
+        &__picture{
+            margin-top: 25px;  
+        }
+    }
+}

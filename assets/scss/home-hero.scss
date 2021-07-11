@@ -1,0 +1,24 @@
+.home-hero{
+    align-items: center;
+    justify-content: center;
+    &__frame{
+        padding-left: 0px;
+        padding-right: 0px; 
+    }
+    &__img{
+        height: 38vw; 
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;  
+    }
+}
+
+
+@media only screen and (max-width: 767px) {        
+    .home-hero{    
+        &__img{
+            height: 500px;   
+        }
+    } 
+}

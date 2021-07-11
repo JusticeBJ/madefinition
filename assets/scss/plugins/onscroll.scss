@@ -1,0 +1,88 @@
+.animate {
+    opacity: 0;
+}
+@mixin animation($str) {
+    -webkit-animation: #{$str};
+    -moz-animation: #{$str};
+    -ms-animation: #{$str};
+    -o-animation: #{$str};
+    animation: #{$str};   
+    @media (prefers-reduced-motion) {
+      .animated {
+        -webkit-animation: unset !important;
+        animation: unset !important;
+        -webkit-transition: none !important;
+        transition: none !important;
+      }
+    }   
+}
+  
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }  
+    @-ms-keyframes #{$animation-name} {
+        @content;
+    }
+    @-o-keyframes #{$animation-name} {
+        @content;
+    }  
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+
+@mixin transform($value){
+    -webkit-transform: $value;
+    -moz-transform: $value;
+    -ms-transform: $value;
+    -o-transform: $value;
+    transform: $value;
+}
+
+.fadeInRight {
+    @include animation('fadeInRight .5s ease .4s both');
+}
+.fadeInRight1 {
+    @include animation('fadeInRight .5s ease .55s both');
+}
+.fadeInRight2 {
+    @include animation('fadeInRight .5s ease .70s both');
+}
+
+.fadeInLeft {
+    @include animation('fadeInLeft .5s ease .4s both');
+}
+
+@include keyframes(fadeInRight) {
+    0% {
+        opacity: 0;
+        @include transform( translate3d(100%, 0, 0));
+    }
+
+    60% {
+        opacity: .6;
+        @include transform( translate3d(0, 0, 0));
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@include keyframes(fadeInLeft) {
+    from {
+        opacity: 0;
+        @include transform( translate3d(-100%, 0, 0));
+    }
+
+    to {
+        opacity: 1;
+        @include transform( translate3d(0, 0, 0));
+    }
+}
+     
+

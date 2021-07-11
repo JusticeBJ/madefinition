@@ -1,0 +1,25 @@
+.about{
+    padding-top: 62px;
+    .about__madefinition{
+        height: 300px;
+        border-right: 1px solid lightgray;
+    }
+    .about__justice{
+        height: 300px;   
+    }
+    
+}
+
+@media only screen and (max-width: 575px) {
+    .about{
+        padding-top: 72px;
+        .about__madefinition{
+            border-right: 1px solid transparent;
+        }
+        .about__justice{
+        }
+        
+    }
+    
+
+}
