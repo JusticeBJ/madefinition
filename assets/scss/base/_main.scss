@@ -43,15 +43,15 @@ body{
     background-color: $white;         
 }
 
-.paragraph, 
-.paragraph div,
-.paragraph p,
-ul li, p{
-    span{
-        color: $red;
-        font-size: 600; 
-    }        
-}
+// .paragraph, 
+// .paragraph div,
+// .paragraph p,
+// ul li, p{
+//     span{
+//         color: $red;
+//         font-size: 600; 
+//     }        
+// }
 
 input:-webkit-autofill{
     -webkit-text-fill-color: $white;  

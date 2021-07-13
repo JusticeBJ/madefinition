@@ -7994,11 +7994,11 @@ body {
 
 .green {
   color: #ffffff;
-  background-color: #00B3A6; }
+  background-color: #74f8da; }
 
 .pink {
   color: #ffffff;
-  background-color: #ff9999; }
+  background-color: #fe9192; }
 
 .blue {
   color: #ffffff;
@@ -8007,13 +8007,6 @@ body {
 .white {
   color: #ffffff;
   background-color: #ffffff; }
-
-.paragraph span,
-.paragraph div span,
-.paragraph p span,
-ul li span, p span {
-  color: #ff0000;
-  font-size: 600; }
 
 input:-webkit-autofill {
   -webkit-text-fill-color: #ffffff;
@@ -8153,9 +8146,9 @@ input:-webkit-autofill {
             .header__menu .menu-menu-container ul li .sub-menu li a:hover {
               color: #ff0000 !important; }
       .header__menu .menu-menu-container ul li .green {
-        background-color: rgba(0, 179, 166, 0.8); }
+        background-color: rgba(116, 248, 218, 0.8); }
       .header__menu .menu-menu-container ul li .pink {
-        background-color: rgba(255, 153, 153, 0.8); }
+        background-color: rgba(254, 145, 146, 0.8); }
       .header__menu .menu-menu-container ul li .blue {
         background-color: rgba(19, 150, 232, 0.8); }
     .header__menu .menu-menu-container ul #menu-item-56 {
@@ -8320,54 +8313,53 @@ input:-webkit-autofill {
               text-decoration: underline; } }
 
 .footer {
+  font-size: 1.14286rem;
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.6);
   background-image: url(../images/bg1.png);
   z-index: 1;
-  padding-top: 30rem;
+  padding-top: 20rem;
   padding-bottom: 1vw;
   position: relative; }
-  .footer .footer_content {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: .5vw; }
-    .footer .footer_content p {
-      margin-top: .4vw; }
-    .footer .footer_content i {
-      color: #ffffff;
-      background-color: #1396e8;
-      width: 2vw;
-      height: 2vw;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 50%;
-      transition: all .4s;
-      -webkit-transition: all .4s;
-      /* Safari 3.1 to 6.0 */ }
-      .footer .footer_content i::before {
-        font-size: .2rem; }
-      .footer .footer_content i:hover {
-        color: #1396e8;
-        background-color: #ffffff;
-        transition: all .4s;
-        -webkit-transition: all .4s;
-        /* Safari 3.1 to 6.0 */ }
-
-@media only screen and (max-width: 1199px) {
-  .footer {
-    padding-top: 25px;
-    padding-bottom: 10px; }
-    .footer .footer_content {
-      padding-bottom: 5px; }
-      .footer .footer_content p {
-        margin-top: 4px; }
-      .footer .footer_content i {
-        width: 30px;
-        height: 30px;
-        font-size: 14px; }
-        .footer .footer_content i::before {
-          font-size: 14px; } }
+  .footer__col {
+    padding: 2rem 2rem;
+    border: 0.1rem solid #ffffff;
+    border-top: 1rem solid #000000;
+    border-bottom: 1rem solid #000000;
+    border-radius: 1rem; }
+    .footer__col h3 {
+      padding-bottom: .5rem;
+      margin-bottom: 1rem;
+      border-bottom: 0.1rem solid #ffffff;
+      display: table; }
+    .footer__col ul {
+      padding-left: 0; }
+      .footer__col ul li {
+        list-style: none;
+        line-height: 2rem; }
+        .footer__col ul li span {
+          color: #ffffff;
+          font-weight: 600;
+          display: inline-block;
+          min-width: 6em; }
+        .footer__col ul li a {
+          color: #ffffff;
+          transition: all .3s ease;
+          -webkit-transition: all .3s ease; }
+          .footer__col ul li a:hover {
+            text-decoration: none;
+            transition: all .3s ease;
+            -webkit-transition: all .3s ease; }
+    .footer__col--left {
+      border-color: #74f8da; }
+      .footer__col--left a:hover {
+        color: #74f8da; }
+    .footer__col--right {
+      border-color: #fe9192; }
+  .footer__bottom {
+    background-color: #000000;
+    padding: 2rem 0;
+    margin-top: 5rem; }
 
 .wave {
   position: absolute;
@@ -8663,9 +8655,9 @@ input:-webkit-autofill {
         list-style-type: '- ';
         margin-bottom: 1vw; }
   .services__column:nth-child(1) .services__box {
-    background-color: #00B3A6; }
+    background-color: #74f8da; }
   .services__column:nth-child(2) .services__box {
-    background-color: #ff9999; }
+    background-color: #fe9192; }
     .services__column:nth-child(2) .services__box .services__image img {
       border: 2px solid red; }
   .services__column:nth-child(3) .services__box {

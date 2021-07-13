@@ -34,12 +34,63 @@ $(document).ready(function(){
 
     //---==>>> Hide empty paragraphs   
     $('p:empty').remove();
-
  
     //---==>>> Remove special characters van tel: href link
     $('a[href^="tel:"]').attr('href', function(_,v){ 
         return v.replace(/\(0\)|\s+/g,'')
     });
+
+    //---==>>> Run Swiper on load
+    var swiper = new Swiper('.swiper-container', {
+      speed: 2000,
+      slidesPerView: 1,
+      loop: true,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        // renderBullet: function (index, className) {
+        //   return '<span class="' + className + '">' + '' + '</span>';
+        // },
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+    
+    var screenSize= $(window).innerWidth();
+    if(screenSize > 768) {
+      
+      //set all banner-global__p to the same height
+      
+        $(window).on('load resize',function(){
+          if(screenSize > 768) {
+            $generalHeight= 0;
+            $allElement= document.querySelectorAll('.footer__col');
+            for(var i=0; i< $allElement.length; i++){
+              $thisHeight= $($allElement[i]).height();
+              if($thisHeight > $generalHeight){
+                $generalHeight= $thisHeight;
+              }
+            }
+            $('.footer__col').css('height', $generalHeight+ 70+'px');
+          }
+          
+        });
+    }
+
+
+
+
+
+
+
+
 
     //---==>>> Hamburger-menu on click toggle
     $("#hamburger-menu").click(function(){
@@ -69,27 +120,7 @@ $(document).ready(function(){
     //   $('.sub-menu').addClass('green');
     // }
 
-    //---==>>> Run Swiper on load
-    var swiper = new Swiper('.swiper-container', {
-      speed: 2000,
-      slidesPerView: 1,
-      loop: true,
-      autoplay: {
-        delay: 4000,
-        disableOnInteraction: true,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-        // renderBullet: function (index, className) {
-        //   return '<span class="' + className + '">' + '' + '</span>';
-        // },
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
+    
 
     //---==>>> Contact Form: Send Email 
     // $('.form_error').hide();
