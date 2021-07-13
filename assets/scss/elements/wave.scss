@@ -1,9 +1,29 @@
-.wave-top{
-    
-    background-color: red; 
-    width: 200px;
-	height: 350px;
-	float: left;
-	shape-outside: ellipse(150px 300px at 50% 50%);
-    
+.wave{
+	position: absolute;
+    left: 0;
+	right: 0;
+	height: 5rem;
+	background-image: url('../images/wave.svg');
+	z-index: 3;
+	&--top{
+		top: 0;
+		transform: rotateX(180deg);
+		background-position: center top;
+	}
+	&--bottom{
+		bottom: 0;
+		transform: rotateY(180deg);
+		background-position: center bottom;
+	}
+}
+
+@media (min-width: 576px){
+	.wave{
+		height: 8rem;
+	}
+}
+@media (min-width: 768px){
+	.wave{
+		height: 15rem;
+	}
 }

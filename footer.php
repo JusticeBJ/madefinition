@@ -1,5 +1,5 @@
-<footer class="footer">
-    
+<footer class="footer parallax-img">
+  <div class="wave wave--top"></div>
   <div class="container-fluid gutter8">
       <div class="footer_content">
         <p>madefinition &copy <?php echo date('Y');?></p>

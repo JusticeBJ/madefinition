@@ -18,3 +18,56 @@ https://css-tricks.com/change-color-of-svg-on-hover/
 png images 
 ========================
 https://www.pngegg.com/en/png-hjozn
+
+
+
+=====================================
+    Combination of js 
+=================================
+
+$(document).ready(function() {
+  //parallax scroll
+  $(window).on("load scroll", function() {
+    var parallaxElement = $(".parallax_scroll"),
+      parallaxQuantity = parallaxElement.length;
+    window.requestAnimationFrame(function() {
+      for (var i = 0; i < parallaxQuantity; i++) {
+        var currentElement = parallaxElement.eq(i),
+          windowTop = $(window).scrollTop(),
+          elementTop = currentElement.offset().top,
+          elementHeight = currentElement.height(),
+          viewPortHeight = window.innerHeight * 0.5 - elementHeight * 0.5,
+          scrolled = windowTop - elementTop + viewPortHeight;
+        currentElement.css({
+          transform: "translate3d(0," + scrolled * -0.15 + "px, 0)"
+        });
+      }
+    });
+  });
+});
+
+
+
+=====================================
+    is-screened
+=================================
+
+//https://stackoverflow.com/questions/41144113/javascript-jquery-add-class-when-element-comes-into-viewport
+// $(window).on('scroll', function() {
+//     $(".graph").each(function() {
+//       if (isScrolledIntoView($(this))) {
+//         $(this).find(".graph-line").addClass("graph-75");
+//         $(this).find(".graph-line-2").addClass("opacity");
+//       }
+//     });
+//   });
+  
+//   function isScrolledIntoView(elem) {
+//     var docViewTop = $(window).scrollTop();
+//     var docViewBottom = docViewTop + $(window).height();
+  
+//     var elemTop = $(elem).offset().top;
+//     var elemBottom = elemTop + $(elem).height();
+  
+//     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+// }

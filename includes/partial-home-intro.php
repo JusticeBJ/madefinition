@@ -13,9 +13,8 @@
                 </div>
             </div>
         </div>
-        <?php  $image = get_template_directory_uri().'/assets/images/waves-black.png'; ?>
-        <img src="<?php echo $image;?>" class="img-full bg-wave">
+        
         <?php
     } ?>
-    
+    <div class="wave wave--bottom"></div>
 </section>

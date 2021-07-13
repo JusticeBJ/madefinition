@@ -1,4 +1,8 @@
 .intro{
+    position: relative;
+    z-index: 3;
+    padding-bottom: 20rem;
+    background-color: $black;
     .intro__content{ 
         padding-top: 4vw;  
         padding-bottom: 5vw;
