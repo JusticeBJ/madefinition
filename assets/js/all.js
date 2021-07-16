@@ -68,17 +68,18 @@ $(document).ready(function(){
       
       //set all banner-global__p to the same height
       
-        $(window).on('load resize',function(){
+        $(window).on('load',function(){
           if(screenSize > 768) {
-            $generalHeight= 0;
+            $generalHeight = 0;
             $allElement= document.querySelectorAll('.footer__col');
             for(var i=0; i< $allElement.length; i++){
               $thisHeight= $($allElement[i]).height();
+              console.log($thisHeight+' and ');
               if($thisHeight > $generalHeight){
                 $generalHeight= $thisHeight;
               }
             }
-            $('.footer__col').css('height', $generalHeight+ 70+'px');
+            $('.footer__col').css('height', $generalHeight+'px');
           }
           
         });
@@ -289,12 +290,12 @@ $(window).on('load scroll resize', function() {
         var docViewTop = $(window).scrollTop() + $(window).height();
         var elemTop = $(this).offset().top;
         if (docViewTop >= elemTop) {
-            $gap= 120 - (docViewTop - elemTop)/3;
-            $(this).css('background-position', 'center top '+ $gap +'px');
+            $gap= 600 - (docViewTop - elemTop)/3;
+            $(this).css('background-position', 'center top '+ (-$gap) +'px');
             $(this).addClass("is-screened");
         }
         else{
-            $(this).css({'background-position': 'center top 110px'});
+            $(this).css({'background-position': 'center top -110px'});
             $(this).removeClass('is-screened');
         }
     });

@@ -5,11 +5,12 @@
     background-color: rgba($color: $black, $alpha: .6);
     background-image: url(../images/bg1.png);
     z-index: 1;
-    padding-top: 20rem;
-    padding-bottom: 1vw;
+    padding-top: 10rem;
     position: relative;
+    &__colcontent{
+        padding: 2rem 2rem 3.5rem 2rem;
+    }
     &__col{
-        padding: 2rem 2rem;
         border: .1rem solid $white;
         border-top: 1rem solid $black;
         border-bottom: 1rem solid $black;
@@ -45,6 +46,7 @@
         }
         &--left{
             border-color: $green;
+            margin-bottom: 3rem;
             a:hover{
                 color: $green;
             }
@@ -58,11 +60,24 @@
         padding: 2rem 0;
         margin-top: 5rem;
     }
+    &__bottom-content{
+        span{
+            color: $red;
+        }
+    }
 }
 
-@media only screen and (max-width: 1199px) {
+@media only screen and (min-width: 768px) {
     .footer{
-       
+        padding-top: 20rem;
+        &__col{
+            &--left{
+                margin-bottom: 0;
+            }
+        }
+        &__bottom-content{
+            text-align: center;
+        }
        
         
          

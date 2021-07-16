@@ -54,17 +54,18 @@ $(document).ready(function(){
       
       //set all banner-global__p to the same height
       
-        $(window).on('load resize',function(){
+        $(window).on('load',function(){
           if(screenSize > 768) {
-            $generalHeight= 0;
+            $generalHeight = 0;
             $allElement= document.querySelectorAll('.footer__col');
             for(var i=0; i< $allElement.length; i++){
               $thisHeight= $($allElement[i]).height();
+              console.log($thisHeight+' and ');
               if($thisHeight > $generalHeight){
                 $generalHeight= $thisHeight;
               }
             }
-            $('.footer__col').css('height', $generalHeight+ 70+'px');
+            $('.footer__col').css('height', $generalHeight+'px');
           }
           
         });

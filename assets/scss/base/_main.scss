@@ -4,24 +4,28 @@ body{
     font-size:  14px;  
     line-height: 1.3; 
 }
-
-
+.container-vw{
+    padding-left: 1.5rem; 
+    padding-right: 1.5rem; 
+}
 .parallax-img {
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
 }
-
-
-
-
-
-
-
-.gutter8{
-    padding-left: 10vw !important; 
-    padding-right: 10vw !important; 
+input:-webkit-autofill{
+    -webkit-text-fill-color: $white;  
+    transition: background-color 9999s ease-in-out;  
+    transition-delay: 9999s; 
+    -webkit-transition: background-color 9999s ease-in-out;  
+    -webkit-transition-delay: 9999s;  
+} 
+img{
+    max-width: 100%;
+    height: auto;
 }
+
+
 .black{
     color: $white;
     background-color: $black;   
@@ -43,6 +47,7 @@ body{
     background-color: $white;         
 }
 
+
 // .paragraph, 
 // .paragraph div,
 // .paragraph p,
@@ -53,13 +58,6 @@ body{
 //     }        
 // }
 
-input:-webkit-autofill{
-    -webkit-text-fill-color: $white;  
-    transition: background-color 9999s ease-in-out;  
-    transition-delay: 9999s; 
-    -webkit-transition: background-color 9999s ease-in-out;  
-    -webkit-transition-delay: 9999s;  
-} 
 .btn-general{
     // height: 80px;  
     display: flex;
@@ -99,10 +97,6 @@ input:-webkit-autofill{
     text-decoration: underline;
     margin-bottom: 3vw;   
 }
-.img-full img, .img-full{
-    width: 100%;
-    height: auto;
-}
 .tab-content{
     margin-top: 60px;
 }   
@@ -114,9 +108,19 @@ input:-webkit-autofill{
 }
 
 @media only screen and (min-width: 768px){
-    html,
+    
+    .container-vw{
+        padding-left: 5rem; 
+        padding-right: 5rem; 
+    }
+}
+@media only screen and (min-width: 1200px){html,
     body{ 
         font-size:  1vw;  
         line-height: 1; 
+    }
+    .container-vw{
+        padding-left: 10rem; 
+        padding-right: 10rem; 
     }
 }

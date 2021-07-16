@@ -71,3 +71,10 @@ $(document).ready(function() {
   
 //     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 // }
+
+
+
+========================
+Read article
+========================
+https://blog.teamtreehouse.com/hooks-wordpress-actions-filters-examples
