@@ -18,10 +18,10 @@
             <div class="navbar-brand__content"><span>Ma</span>definition</div>
           </div>
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <button class="navbar-toggler" type="button" data-toggle="collapse">
           <div id="hamburger-menu"><span></span><span></span><span></span></div>
         </button>
-        <div class="collapse navbar-collapse justify-content-start" id="collapsibleNavbar">
+        <div class="navbar-menu">
           <?php
             wp_nav_menu(
               array(
@@ -29,7 +29,7 @@
                 'theme_location' => 'primary',
                 'depth' => 2,
                 'container' => false,
-                'menu_class' => 'navbar-nav',
+                'menu_class' => 'navbar-list',
                 'fallback_cb' => 'wp_page_menu',
                 'walker' => new wp_bootstrap_navwalker()
               )

@@ -15,6 +15,7 @@
 
 
 
+
 //----------=======>>> Document Ready <<<=======----------
 $(document).ready(function(){
 
@@ -48,7 +49,18 @@ $(document).ready(function(){
       },
     });
 
-    
+    $(".dropdown").click(function(){
+      if($('.dropdown-menu', this).hasClass('open')){
+        $('.dropdown-menu').removeClass('open');
+        // $(this).find('.dropdown-menu').removeClass('open').slideUp();
+      }
+      else{
+        $(this).find('.dropdown-menu').addClass('open');
+      }
+      
+
+    });
+
     var screenSize= $(window).innerWidth();
     if(screenSize > 768) {
       
@@ -89,20 +101,20 @@ $(document).ready(function(){
     $('.dropdown ul').first().addClass( "dropdown-menu" );
 
     //---==>>> If any dropdown item active make service title red
-    if($('.dropdown-item').hasClass('current-menu-item')){
-      $('#menu-item-56').addClass('current-menu-item');
-    }
+    // if($('.dropdown-item').hasClass('current-menu-item')){
+    //   $('#menu-item-56').addClass('current-menu-item');
+    // }
 
     //---==>>> Change Sub-menu background colors
-    if($('.header').hasClass('green')){
-      $('.sub-menu').addClass('green');
-    }
-    if($('.header').hasClass('pink')){
-      $('.sub-menu').addClass('pink');   
-    }
-    if($('.header').hasClass('blue')){
-      $('.sub-menu').addClass('blue');
-    }
+    // if($('.header').hasClass('green')){
+    //   $('.sub-menu').addClass('green');
+    // }
+    // if($('.header').hasClass('pink')){
+    //   $('.sub-menu').addClass('pink');   
+    // }
+    // if($('.header').hasClass('blue')){
+    //   $('.sub-menu').addClass('blue');
+    // }
     // if($('#menu-item-54').hasClass('current-menu-item')){
     //   $('.sub-menu').addClass('green');
     // }
@@ -224,15 +236,15 @@ $(".btn-general a").click(function(){
 });
 
 // ----------=======>>> Display Dropdown Box on hover <<<=======----------
-$('#menu-item-56').hover(function(){
-  $(this).addClass('show');
-  $('a').first().attr('aria-expanded','true');
-  $('.sub-menu').addClass('show').css('display','block');
-}, function(){
-  $(this).removeClass('show');
-  $('a').first().attr('aria-expanded','false');
-  $('.sub-menu').css('display','none').removeClass('show');
-});
+// $('#menu-item-56').hover(function(){
+//   $(this).addClass('show');
+//   $('a').first().attr('aria-expanded','true');
+//   $('.sub-menu').addClass('show').css('display','block');
+// }, function(){
+//   $(this).removeClass('show');
+//   $('a').first().attr('aria-expanded','false');
+//   $('.sub-menu').css('display','none').removeClass('show');
+// });
 
 
 
