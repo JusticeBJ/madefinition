@@ -9,11 +9,13 @@
 		top: 0;
 		transform: rotateX(180deg);
 		background-position: center top;
+		border-bottom: .3rem solid $white;
 	}
 	&--bottom{
 		bottom: 0;
 		transform: rotateY(180deg);
 		background-position: center bottom;
+		border-bottom: .3rem solid $white;
 	}
 }
 

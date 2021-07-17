@@ -2,7 +2,7 @@
   <div class="footer__top">
       <div class="container-fluid container-vw">
         <div class="row">
-          <div class="col-md-4 offset-md-2">
+          <div class="col-md-6 col-lg-5 offset-lg-1 col-xl-4 offset-xl-2">
             <div class="footer__col footer__col--left">
               <div class="footer__colcontent">
                 <h3 class="f30b">Contact</h3>
@@ -14,7 +14,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-6 col-lg-5 col-xl-4">
             <div class="footer__col footer__col--right">
               <div class="footer__colcontent">
                 <h3 class="f30b">Contact</h3>

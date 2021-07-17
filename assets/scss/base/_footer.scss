@@ -3,7 +3,12 @@
     font-size: $f16;
     color: $white; 
     background-color: rgba($color: $black, $alpha: .6);
-    background-image: url(../images/bg1.png);
+    background-color: $grey;
+    // background-image: url(../images/bg1.png);
+    background-image: linear-gradient(to bottom, rgba($color: $black, $alpha: .1), rgba($color: $grey, $alpha: .1)),
+    url(../images/bg1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     z-index: 1;
     padding-top: 10rem;
     position: relative;
@@ -15,6 +20,7 @@
         border-top: 1rem solid $black;
         border-bottom: 1rem solid $black;
         border-radius: 1rem;
+        max-width: 25rem;
         h3{
             padding-bottom: .5rem;
             margin-bottom: 1rem;

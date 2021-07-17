@@ -1,40 +1,22 @@
 .intro{
+    color: $white;
+    padding-top: 5rem;
+    padding-bottom: 20rem;
     position: relative;
     z-index: 3;
-    padding-bottom: 20rem;
-    background-color: $black;
-    .intro__content{ 
-        padding-top: 4vw;  
-        padding-bottom: 5vw;
-        h3{
-            margin-bottom: 2vw;
-            span{
-                color: $red;
-            }
-        } 
-        p{
-            span{
-                color: $red;
-                font-weight: bold;
-            } 
-        }
-        ul{
-            li{
-                line-height: 2vw; 
-            }
-
-        }
-    }
+    background-color: $grey;
+    // background-color: rgba($color: $black, $alpha: .8);
+    background-image: linear-gradient(to bottom, rgba($color: $black, $alpha: .1), rgba($color: $grey, $alpha: .1)),
+    url(../images/bg1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
 @media only screen and (max-width: 1199px) {
     .intro{
         .intro__content{ 
-            ul{
-                li{
-                    line-height: 20px;  
-                }
-            }
+            
         }
     }
 }
