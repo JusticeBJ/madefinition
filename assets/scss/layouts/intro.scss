@@ -1,6 +1,6 @@
 .intro{
     color: $white;
-    padding-top: 5rem;
+    padding-top: 6rem;
     padding-bottom: 20rem;
     position: relative;
     z-index: 3;
@@ -10,7 +10,23 @@
     url(../images/bg1.png);
     background-repeat: no-repeat;
     background-size: cover;
-    
+    &__bigtitle{
+        // color: $green;
+        display: inline-block;
+        text-transform: uppercase;
+        margin-right: 1rem;
+    }
+    &__titles{
+        display: inline-block;
+        padding: .5rem 1rem;
+        h1{
+            color: $pink;
+            // color: $green;
+        }
+    }
+    &__p{
+        margin-top: 2rem;
+    }
 }
 
 @media only screen and (max-width: 1199px) {

@@ -31,7 +31,7 @@
       <div class="footer__bottom-content"><span>Ma</span>definition &copy <?php echo date('Y');?></div>
     </div>  
   </div> 
-  <div class="wave--1 wave--top-right"></div>
+  <div class="wave1 wave1--top-left"></div>
 </footer>
 <?php wp_footer(); ?> 
 

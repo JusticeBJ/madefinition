@@ -1,0 +1,11 @@
+.subscription{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    &__content{
+        border: 1px solid red;
+        text-align: center;
+        max-width: 40rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

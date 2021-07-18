@@ -1,3 +1,8 @@
+.f80b{
+    font-size: $f50;
+    line-height: 1.2;
+    font-weight: 700; 
+}
 .f50b{
     font-size: $f36;
     line-height: 1.2;
@@ -33,6 +38,13 @@ p ul li a{
 }
 
 
+@media (min-width: 576px){
+    .f80b{
+        font-size: $f80;
+        line-height: 1.2;
+        font-weight: 700; 
+    }
+}
 @media (min-width: 768px){
 	.f50b{
         font-size: $f50;

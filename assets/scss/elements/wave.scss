@@ -5,58 +5,65 @@
 	height: 5rem;
 	z-index: 3;
 	border-bottom: .3rem solid $white;
-	&--1{
-		background-image: url('../images/wave.svg');
-	}
-	&--2{
-		background-image: url('../images/wave2.svg');
-	}
-	&--3{
-		background-image: url('../images/wave3.svg');
-	}
-	&--4{
-		background-image: url('../images/wave4.svg');
-	}
-	&--5{
-		background-image: url('../images/wave5.svg');
-	}
-	&--6{
-		background-image: url('../images/wave6.svg');
-	}
 }
-.wave--top-left{
+
+.wave1{
 	@extend .wave;
-	top: 0;
-	background-position: center top;
+	background-image: url('../images/wave.svg');
 }
-.wave--top-right{
+
+.wave2{
 	@extend .wave;
-	top: 0;
-	transform: rotateX(180deg);
-	background-position: center top;
+	background-image: url('../images/wave2.svg');
 }
-.wave--bottom-left{
+.wave3{
 	@extend .wave;
-	bottom: 0;
-	transform: rotateY(180deg);
-	background-position: center bottom;
+	background-image: url('../images/wave3.svg');
 }
-.wave--bottom-right{
+.wave4{
 	@extend .wave;
-	bottom: 0;
-	transform: rotateX(180deg);
-	transform: rotateY(180deg);
-	background-position: center bottom;
+	background-image: url('../images/wave4.svg');
+}
+.wave5{
+	@extend .wave;
+	background-image: url('../images/wave5.svg');
+}
+.wave6{
+	@extend .wave;
+	background-image: url('../images/wave6.svg');
+}
+
+.wave1{
+	&--top-left{
+		top: 0;
+		background-position: center top;
+		transform: rotateX(180deg);
+	}
+	&--top-right{
+		top: 0;
+		transform: rotateX(180deg) rotateY(180deg);
+		background-position: center top;
+	}
+	&--bottom-left{
+		bottom: 0;
+		background-position: center bottom;
+	}
+	&--bottom-right{
+		bottom: 0;
+		transform: rotateY(180deg);
+		background-position: center bottom;
+	}
 }
 
 
-@media (min-width: 576px){
-	.wave{
-		height: 8rem;
+
+	@media (min-width: 576px){
+		.wave{
+			height: 8rem;
+		}
 	}
-}
-@media (min-width: 768px){
-	.wave{
-		height: 15rem;
-	}
+	@media (min-width: 768px){
+		.wave{
+			height: 15rem;
+		}
 }

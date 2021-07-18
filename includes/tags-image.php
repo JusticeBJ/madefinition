@@ -20,9 +20,10 @@
                             $image = $image['sizes'][ $size ];
                         }
                         else{
-                            $image= get_template_directory_uri().'/assets/images/laptop-analytics-2.png';
+                            $image= get_template_directory_uri().'/assets/images/Laptop.png';
                         }
                     ?>
+
                     <img src="<?php echo $image; ?>" alt="Laptop">
                 </figure> 
             </div>
