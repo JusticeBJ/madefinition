@@ -1,4 +1,4 @@
-.tag{
+@mixin tag{
     font-size: $f18;
     line-height: 1;
     font-weight: 600;
@@ -8,20 +8,25 @@
     border-radius: .7rem;
     padding: 1.7rem 1rem;
     margin-bottom: 1rem;
-    @include boxShadow1;
-    &--pink{
-        border-color: $pink;
-    }
-    &--green{
-        border-color: $green;
-    }
-    &--black{
-        border-color: $black;
-    }
-    &--grey{
-        border-color: $grey;
-    }
-    &--red{
-        border-color: $red;
-    }
+    @include boxShadow3;
+}
+.tag--pink{
+    @include tag;
+    border-color: $pink;
+}
+.tag--green{
+    @include tag;
+    border-color: $green;
+}
+.tag--black{
+    @include tag;
+    border-color: $black;
+}
+.tag--grey{
+    @include tag;
+    border-color: $grey;
+}
+.tag--red{
+    @include tag;
+    border-color: $red;
 }

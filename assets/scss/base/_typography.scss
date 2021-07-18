@@ -1,5 +1,6 @@
 .f50b{
-    font-size: $f50;
+    font-size: $f36;
+    line-height: 1.2;
     font-weight: 700; 
 }
 .f30b{
@@ -8,6 +9,10 @@
 }
 .f25b{
     font-size: $f25;     
+    font-weight: 700; 
+}
+.f20b{
+    font-size: $f20;     
     font-weight: 700; 
 }
 
@@ -25,4 +30,12 @@ p ul li a{
 .paragraph p,       
 .paragraph div{
     font-size: $f18 !important;      
+}
+
+
+@media (min-width: 768px){
+	.f50b{
+        font-size: $f50;
+        line-height: 1; 
+    }
 }
